@@ -1,0 +1,18 @@
+# See http://cloud.spring.io/spring-cloud-netflix/spring-cloud-netflix.html
+# for details on this configuration.
+
+server:
+  port: 8761 # Default Eureka port
+security:
+  user:
+    password: ${eureka.password}
+
+eureka:
+  dashboard:
+    enabled: false
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
+  password: ${SECURITY_USER_PASSWORD:password}

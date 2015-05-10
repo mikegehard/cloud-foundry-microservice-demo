@@ -1,0 +1,31 @@
+springBoot {
+    requiresUnpack = ['com.netflix.eureka:eureka-core','com.netflix.eureka:eureka-client']
+}
+
+jar {
+    baseName = 'service-discovery'
+    version = '0.0.1-SNAPSHOT'
+}
+
+dependencies {
+    compile 'org.springframework.cloud:spring-cloud-starter-eureka-server:1.0.1.BUILD-SNAPSHOT'
+}
+
+group = 'msgehard'
+task buildDocker(type: Docker, dependsOn: build) {
+    push = true
+    applicationName = jar.baseName
+    tagVersion = jar.version
+    baseImage("java:8")
+    addFile("${jar.baseName}-${jar.version}.jar", "app.jar")
+    entryPoint(["java","-jar","/app.jar"])
+    // Expose a port so Lattice knows what port to bind to.
+    exposePort(8761)
+
+    doFirst {
+        copy {
+            from jar
+            into stageDir
+        }
+    }
+}

@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: Tax Calculator
+
+eureka:
+  instance:
+    hostname: ${cf_instance_ip}
+    nonSecurePort: ${cf_instance_port}
+    metadataMap:
+      instanceId: Instance-${instance_index}
+  client:
+    serviceUrl:
+      defaultZone: http://service-discovery.192.168.11.11.xip.io/eureka/

@@ -1,0 +1,32 @@
+jar {
+    baseName = 'tax-calculator'
+    version = '0.0.1-SNAPSHOT'
+}
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.springframework.cloud:spring-cloud-starter-eureka:1.0.1.BUILD-SNAPSHOT")
+
+    testCompile("com.github.tomakehurst:wiremock:1.50")
+    testCompile("org.springframework.boot:spring-boot-starter-test")
+    testCompile("org.mockito:mockito-core:1.+")
+}
+
+group = 'msgehard'
+task buildDocker(type: Docker, dependsOn: build) {
+    push = true
+    applicationName = jar.baseName
+    tagVersion = jar.version
+    baseImage("java:8")
+    addFile("${jar.baseName}-${jar.version}.jar", "app.jar")
+    entryPoint(["java","-jar","/app.jar"])
+    // Expose a port so Lattice knows what port to bind to.
+    exposePort(8080)
+
+    doFirst {
+        copy {
+            from jar
+            into stageDir
+        }
+    }
+}
