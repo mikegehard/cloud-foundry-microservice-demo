@@ -13,6 +13,9 @@ to a [Lattice](http://lattice.cf/docs) instance running locally.
 
 * tax-calculator - A Java 8/Spring Boot based service that queries the property-lookup service and calculates property tax based on the property information.
 
+* property-lookup-app - A Ruby/Sinatra application that uses the property-lookup service to display property
+information.
+
 
 ## Building Docker images
 
