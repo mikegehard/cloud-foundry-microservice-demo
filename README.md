@@ -30,3 +30,15 @@ set in that window (see `docker up` for details). You also need to be logged in 
 See the [Lattice walkthrough](http://lattice.cf/docs/getting-started/) for details on how to use Lattice.
 You can use the `bin/deploy-to-lattice.sh <DockerHub tag>` script to deploy Docker containers pushed to DockerHub to your
 local Lattice installation.
+
+## Service information
+
+You can query the service-discovery service for information about the registered services using curl:
+
+```
+curl http://service-discovery.192.168.11.11.xip.io/eureka/apps
+
+```
+
+Please note that it takes ~30 seconds for a new service instance to be registered with the service-discovery
+service.
