@@ -1,0 +1,106 @@
+<applications>
+    <versions__delta>1</versions__delta>
+    <apps__hashcode>UP_3_</apps__hashcode>
+    <application>
+        <name>TAX CALCULATOR</name>
+        <instance>
+            <hostName>192.168.11.11</hostName>
+            <app>TAX CALCULATOR</app>
+            <ipAddr>10.254.0.9</ipAddr>
+            <status>UP</status>
+            <overriddenstatus>UNKNOWN</overriddenstatus>
+            <port enabled="true">61005</port>
+            <securePort enabled="false">443</securePort>
+            <countryId>1</countryId>
+            <dataCenterInfo class="com.netflix.appinfo.InstanceInfo$DefaultDataCenterInfo">
+                <name>MyOwn</name>
+            </dataCenterInfo>
+            <leaseInfo>
+                <renewalIntervalInSecs>30</renewalIntervalInSecs>
+                <durationInSecs>90</durationInSecs>
+                <registrationTimestamp>1431384753729</registrationTimestamp>
+                <lastRenewalTimestamp>1431437800852</lastRenewalTimestamp>
+                <evictionTimestamp>0</evictionTimestamp>
+                <serviceUpTimestamp>1431384723210</serviceUpTimestamp>
+            </leaseInfo>
+            <metadata>
+                <instanceId>Instance-0</instanceId>
+            </metadata>
+            <homePageUrl>http://192.168.11.11:61005/</homePageUrl>
+            <statusPageUrl>http://192.168.11.11:61005/info</statusPageUrl>
+            <healthCheckUrl>http://192.168.11.11:61005/health</healthCheckUrl>
+            <vipAddress>Tax Calculator</vipAddress>
+            <isCoordinatingDiscoveryServer>false</isCoordinatingDiscoveryServer>
+            <lastUpdatedTimestamp>1431384753729</lastUpdatedTimestamp>
+            <lastDirtyTimestamp>1431384733103</lastDirtyTimestamp>
+            <actionType>ADDED</actionType>
+        </instance>
+    </application>
+    <application>
+        <name>PROPERTY LOOKUP</name>
+        <instance>
+            <hostName>192.168.11.11</hostName>
+            <app>PROPERTY LOOKUP</app>
+            <ipAddr>10.254.0.13</ipAddr>
+            <status>UP</status>
+            <overriddenstatus>UNKNOWN</overriddenstatus>
+            <port enabled="true">61006</port>
+            <securePort enabled="false">443</securePort>
+            <countryId>1</countryId>
+            <dataCenterInfo class="com.netflix.appinfo.InstanceInfo$DefaultDataCenterInfo">
+                <name>MyOwn</name>
+            </dataCenterInfo>
+            <leaseInfo>
+                <renewalIntervalInSecs>30</renewalIntervalInSecs>
+                <durationInSecs>90</durationInSecs>
+                <registrationTimestamp>1431384939547</registrationTimestamp>
+                <lastRenewalTimestamp>1431437806860</lastRenewalTimestamp>
+                <evictionTimestamp>0</evictionTimestamp>
+                <serviceUpTimestamp>1431384909152</serviceUpTimestamp>
+            </leaseInfo>
+            <metadata>
+                <instanceId>Instance-1</instanceId>
+            </metadata>
+            <homePageUrl>http://192.168.11.11:61006/</homePageUrl>
+            <statusPageUrl>http://192.168.11.11:61006/info</statusPageUrl>
+            <healthCheckUrl>http://192.168.11.11:61006/health</healthCheckUrl>
+            <vipAddress>Property Lookup</vipAddress>
+            <isCoordinatingDiscoveryServer>false</isCoordinatingDiscoveryServer>
+            <lastUpdatedTimestamp>1431384939547</lastUpdatedTimestamp>
+            <lastDirtyTimestamp>1431384919053</lastDirtyTimestamp>
+            <actionType>ADDED</actionType>
+        </instance>
+        <instance>
+            <hostName>192.168.11.11</hostName>
+            <app>PROPERTY LOOKUP</app>
+            <ipAddr>10.254.0.1</ipAddr>
+            <status>UP</status>
+            <overriddenstatus>UNKNOWN</overriddenstatus>
+            <port enabled="true">61004</port>
+            <securePort enabled="false">443</securePort>
+            <countryId>1</countryId>
+            <dataCenterInfo class="com.netflix.appinfo.InstanceInfo$DefaultDataCenterInfo">
+                <name>MyOwn</name>
+            </dataCenterInfo>
+            <leaseInfo>
+                <renewalIntervalInSecs>30</renewalIntervalInSecs>
+                <durationInSecs>90</durationInSecs>
+                <registrationTimestamp>1431384724201</registrationTimestamp>
+                <lastRenewalTimestamp>1431437801353</lastRenewalTimestamp>
+                <evictionTimestamp>0</evictionTimestamp>
+                <serviceUpTimestamp>1431384693962</serviceUpTimestamp>
+            </leaseInfo>
+            <metadata>
+                <instanceId>Instance-0</instanceId>
+            </metadata>
+            <homePageUrl>http://192.168.11.11:61004/</homePageUrl>
+            <statusPageUrl>http://192.168.11.11:61004/info</statusPageUrl>
+            <healthCheckUrl>http://192.168.11.11:61004/health</healthCheckUrl>
+            <vipAddress>Property Lookup</vipAddress>
+            <isCoordinatingDiscoveryServer>false</isCoordinatingDiscoveryServer>
+            <lastUpdatedTimestamp>1431384724201</lastUpdatedTimestamp>
+            <lastDirtyTimestamp>1431384703794</lastDirtyTimestamp>
+            <actionType>ADDED</actionType>
+        </instance>
+    </application>
+</applications>

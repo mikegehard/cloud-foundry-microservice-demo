@@ -1,9 +1,9 @@
 module ServiceLocator
   class ServiceInstance
-    attr_reader :address, :port
+    attr_reader :host, :port
 
-    def initialize(address, port)
-      @address = address
+    def initialize(host, port)
+      @host = host
       @port = port
     end
   end
