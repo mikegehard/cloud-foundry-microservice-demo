@@ -4,10 +4,10 @@ spring:
 
 eureka:
   instance:
-    hostname: ${cf_instance_ip}
-    nonSecurePort: ${cf_instance_port}
+    hostname: ${cf_instance_ip:localhost}
+    nonSecurePort: ${cf_instance_port:8080}
     metadataMap:
-      instanceId: Instance-${instance_index}
+      instanceId: Instance-${instance_index:0}
   client:
     serviceUrl:
       defaultZone: http://service-discovery.192.168.11.11.xip.io/eureka/
