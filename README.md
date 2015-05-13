@@ -5,6 +5,10 @@ This repository contains a demo of how to run multiple services within Cloud Fou
 This demo deploys the applications, packaged as Docker images,
 to a [Lattice](http://lattice.cf/docs) instance running locally.
 
+DISCLAIMER: This mono-repo may or may not be the best structure for your microservice repository. These services are all
+in one repository for simplicity of explanation. For more details, see 
+[Building Microservices](http://info.thoughtworks.com/building-microservices-book) by Sam Newman.
+
 ## Applications
 
 * service-discovery - A Spring Boot application that uses a Eureka server from Spring Cloud to handle service discovery
